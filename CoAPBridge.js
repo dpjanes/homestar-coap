@@ -66,7 +66,7 @@ CoAPBridge.prototype.name = function () {
 /* --- lifecycle --- */
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#discover} for documentation.
  */
 CoAPBridge.prototype.discover = function () {
     var self = this;
@@ -87,7 +87,7 @@ CoAPBridge.prototype.discover = function () {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#connect} for documentation.
  */
 CoAPBridge.prototype.connect = function (connectd) {
     var self = this;
@@ -132,7 +132,7 @@ CoAPBridge.prototype._forget = function () {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#disconnect} for documentation.
  */
 CoAPBridge.prototype.disconnect = function () {
     var self = this;
@@ -146,7 +146,7 @@ CoAPBridge.prototype.disconnect = function () {
 /* --- data --- */
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#push} for documentation.
  */
 CoAPBridge.prototype.push = function (pushd) {
     var self = this;
@@ -183,7 +183,7 @@ CoAPBridge.prototype._push = function (pushd) {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#pull} for documentation.
  */
 CoAPBridge.prototype.pull = function () {
     var self = this;
@@ -195,7 +195,7 @@ CoAPBridge.prototype.pull = function () {
 /* --- state --- */
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#meta} for documentation.
  */
 CoAPBridge.prototype.meta = function () {
     var self = this;
@@ -210,14 +210,14 @@ CoAPBridge.prototype.meta = function () {
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#reachable} for documentation.
  */
 CoAPBridge.prototype.reachable = function () {
     return (this.native !== null) && this._reachable;
 };
 
 /**
- *  See {iotdb.bridge.Bridge#XXX} for documentation.
+ *  See {iotdb.bridge.Bridge#configure} for documentation.
  */
 CoAPBridge.prototype.configure = function (app) {};
 

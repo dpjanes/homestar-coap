@@ -63,6 +63,12 @@ var CoAPBridge = function (initd, native) {
     }
 };
 
+CoAPBridge.prototype = new iotdb.Bridge();
+
+CoAPBridge.prototype.name = function () {
+    return "CoAPBridge";
+};
+
 /* --- lifecycle --- */
 
 /**

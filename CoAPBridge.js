@@ -154,6 +154,8 @@ CoAPBridge.prototype.push = function (pushd) {
         return;
     }
 
+    self._validate_push(pushd);
+
     logger.info({
         method: "push",
         putd: putd

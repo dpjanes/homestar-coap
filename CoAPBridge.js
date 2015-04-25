@@ -217,15 +217,6 @@ CoAPBridge.prototype.reachable = function () {
  */
 CoAPBridge.prototype.configure = function (app) {};
 
-/* --- injected: THIS CODE WILL BE REMOVED AT RUNTIME, DO NOT MODIFY  --- */
-CoAPBridge.prototype.discovered = function (bridge) {
-    throw new Error("CoAPBridge.discovered not implemented");
-};
-
-CoAPBridge.prototype.pulled = function (pulld) {
-    throw new Error("CoAPBridge.pulled not implemented");
-};
-
 /*
  *  API
  */

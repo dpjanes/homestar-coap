@@ -6,6 +6,8 @@
 #   2015-MM-DD
 #
 
+exit 0
+
 PACKAGE=homestar-TEMPLATE
 DIST_ROOT=/var/tmp/.dist.$$
 

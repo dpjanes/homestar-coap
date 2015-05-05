@@ -22,7 +22,7 @@
 
 "use strict";
 
-exports.Bridge = require('./CoAPBridge');
+exports.Bridge = require('./CoAPBridge').Bridge;
 exports.bindings = [
     require('./models/CoAPSwitch').binding,
 ];

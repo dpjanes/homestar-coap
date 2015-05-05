@@ -1,4 +1,4 @@
-# homestar-template
+# homestar-coap
 IOTDB / HomeStar Controller for CoAP
 
 <img src="https://github.com/dpjanes/iotdb-homestar/blob/master/docs/HomeStar.png" align="right" />
@@ -12,5 +12,5 @@ See: https://github.com/dpjanes/iotdb-homestar#installation
 
 Then
 
-    $ homestar install homestar-template
+    $ homestar install homestar-coap
 

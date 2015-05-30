@@ -148,9 +148,10 @@ CoAPBridge.prototype.disconnect = function () {
 /**
  *  See {iotdb.bridge.Bridge#push} for documentation.
  */
-CoAPBridge.prototype.push = function (pushd) {
+CoAPBridge.prototype.push = function (pushd, done) {
     var self = this;
     if (!self.native) {
+        done(new Error("not connected"));
         return;
     }
 
@@ -168,6 +169,7 @@ CoAPBridge.prototype.push = function (pushd) {
             run: function () {
                 self._pushd(pushd);
                 self.queue.finished(qitem);
+                done();
             }
         };
         self.queue.add(qitem);

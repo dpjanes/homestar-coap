@@ -206,7 +206,7 @@ CoAPBridge.prototype.meta = function () {
     }
 
     return {
-        "iot:thing": _.id.thing_urn.unique("CoAP", self.initd.url),
+        "iot:thing-id": _.id.thing_urn.unique("CoAP", self.initd.url),
         "schema:name": self.native.name || "CoAP",
     };
 };

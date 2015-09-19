@@ -4,7 +4,8 @@
         "url": "https://github.com/dpjanes/homestar-TEMPLATE/issues"
     }, 
     "dependencies": {
-        "coap": "~0.10.2"
+        "coap": "~0.10.2",
+        "iotdb": ">=0.6.3"
     }, 
     "description": "HomeStar / IOTDB Bridge for CoAP", 
     "devDependencies": {
@@ -23,9 +24,6 @@
     "license": "Apache-2.0", 
     "main": "index.js", 
     "name": "homestar-TEMPLATE", 
-    "peerDependencies": {
-        "iotdb": ">=0.6.3"
-    }, 
     "private": false, 
     "repository": {
         "type": "git", 

@@ -24,11 +24,10 @@
 
 var iotdb = require('iotdb');
 var _ = iotdb._;
-var bunyan = iotdb.bunyan;
 
 var coap = require('coap');
 
-var logger = bunyan.createLogger({
+var logger = iotdb.logger({
     name: 'homestar-coap',
     module: 'CoAPBridge',
 });

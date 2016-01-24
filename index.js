@@ -24,7 +24,6 @@
 
 exports.Bridge = require('./CoAPBridge').Bridge;
 exports.bindings = [
-    require('./models/CoAPSwitch').binding,
 ];
 
 exports.iotdb = require("iotdb");

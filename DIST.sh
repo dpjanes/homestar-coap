@@ -6,9 +6,7 @@
 #   2015-MM-DD
 #
 
-exit 0
-
-PACKAGE=homestar-TEMPLATE
+PACKAGE=homestar-coap
 DIST_ROOT=/var/tmp/.dist.$$
 
 if [ ! -d "$DIST_ROOT" ]
@@ -35,11 +33,10 @@ echo "=================="
         --exclude "node_modules" \
         README.md LICENSE \
         homestar.json package.json \
-        CoAPBridge.js index.js \
+        CoAPBridge.js index.js coap.js \
         models/*js \
         |
     ( cd "${NPM_DST}" && tar xvf - && npm publish ) || exit 1
-
     git commit -m "new release" package.json || exit 1
     git push || exit 1
 

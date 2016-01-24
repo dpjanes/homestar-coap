@@ -22,6 +22,9 @@
 
 "use strict";
 
+/**
+ *  Bridge section
+ */
 exports.Bridge = require('./CoAPBridge').Bridge;
 exports.bindings = [
 ];
@@ -29,4 +32,13 @@ exports.bindings = [
 exports.iotdb = require("iotdb");
 exports.wrap = function(name, initd) {
     return exports.iotdb.make_wrap(name, exports.bindings, initd);
+};
+
+/**
+ *  Transporter section
+ */
+var coap = require('./coap');
+
+exports.homestar = {
+    on_ready: coap.on_ready,
 };

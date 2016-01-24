@@ -5,6 +5,8 @@
     }, 
     "dependencies": {
         "coap": "~0.10.2",
+        "iotdb-transport-coap": "",
+        "url-join": "",
         "iotdb": ">=0.6.3"
     }, 
     "description": "HomeStar / IOTDB Bridge for CoAP", 

@@ -55,8 +55,8 @@ var _transport_coap = function (iotdb_transporter) {
         server_port: 22001, // needs to be made soft
     });
     iotdb_transport.bind(iotdb_transporter, coap_transporter, {
-        bands: [ "istate", "ostate", "model", "meta", ],
-        updated: [ "ostate", "meta", ],
+        bands: ["istate", "ostate", "model", "meta", ],
+        updated: ["ostate", "meta", ],
         user: owner,
     });
 };

@@ -45,15 +45,15 @@ var CoAPBridge = function (initd, native) {
     self.initd = _.defaults(initd,
         iotdb.keystore().get("bridges/CoAPBridge/initd"), {
             url: null,
-            queue: true,    // if true, queue all requests
+            queue: true, // if true, queue all requests
             poll: 30
         }
     );
-    self.native = native;   // the thing that does the work - keep this name
+    self.native = native; // the thing that does the work - keep this name
 
     if (self.native && self.initd.queue) {
         self._reachable = true;
-        self._queue = _.queue("CoAPBridge:" + url.parse(self.initd.url).host);
+        // self._queue = _.queue("CoAPBridge:" + url.parse(self.initd.url).host);
     }
 };
 
@@ -159,7 +159,7 @@ CoAPBridge.prototype.push = function (pushd, done) {
 
     logger.info({
         method: "push",
-        putd: putd
+        pushd: pushd,
     }, "push");
 
     if (self.queue) {
@@ -181,8 +181,7 @@ CoAPBridge.prototype.push = function (pushd, done) {
 /**
  *  Do the work of sending data
  */
-CoAPBridge.prototype._push = function (pushd) {
-};
+CoAPBridge.prototype._push = function (pushd) {};
 
 /**
  *  See {iotdb.bridge.Bridge#pull} for documentation.

@@ -64,13 +64,3 @@ This code has a compatibility with a large number of things, including:
 * Wemo (a number of products)
 
 … and more in progress.
-
-## Ove
-
-
-1) 
-
-interoperability with the CoAP light simulated at coap://129.132.130.252:63551/state, including discovery, updating, and getting state.
-
-2)
-

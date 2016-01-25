@@ -39,6 +39,15 @@ try {
 } catch (x) {}
 
 var _transport_coap = function (iotdb_transporter) {
+    // HACK - 
+    if (!iotdb.keystore().get("/transports/COAPTransport/enabled")) {
+        logger.error({
+            method: "_transport_coap",
+            cause: "do $ homestar set --boolean /transports/COAPTransport/enabled true",
+        }, "Transporter not enabled");
+        return;
+    }
+
     if (!COAPTransport) {
         logger.error({
             method: "_transport_coap",

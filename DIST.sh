@@ -33,7 +33,7 @@ echo "=================="
         --exclude "node_modules" \
         README.md LICENSE \
         homestar.json package.json \
-        CoAPBridge.js index.js coap.js \
+        CoAPBridge.js index.js \
         models/*js \
         |
     ( cd "${NPM_DST}" && tar xvf - && npm publish ) || exit 1

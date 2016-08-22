@@ -7,10 +7,9 @@ THIS IS JUST A STUB - needs to do the actual work still
 
 # Installation
 
-Install Home☆Star first. 
-See: https://github.com/dpjanes/iotdb-homestar#installation
+* [Read this first](https://github.com/dpjanes/node-iotdb/blob/master/docs/install.md)
 
-Then
+Then:
 
-    $ homestar install homestar-coap
+    $ npm install homestar-coap
 

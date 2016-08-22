@@ -8,7 +8,7 @@
         "iotdb": ">=0.12.0", 
         "iotdb-transport-coap": "~0.0.12"
     }, 
-    "description": "HomeStar / IOTDB Bridge for CoAP", 
+    "description": "IOTDB Bridge for CoAP", 
     "devDependencies": {
         "grunt": "~0.4.5", 
         "grunt-contrib-jshint": "~0.12.0", 

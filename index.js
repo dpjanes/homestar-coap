@@ -28,3 +28,5 @@
 exports.Bridge = require('./CoAPBridge').Bridge;
 exports.bindings = [];
 
+
+exports.module_folder = __dirname;
